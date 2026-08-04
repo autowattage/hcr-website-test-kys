@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  <style>body { margin: 0; font-family: system-ui; background: #08131f; color: #fff; }
+main { min-height: 100vh; display: grid; place-items: center; overflow: hidden; }
+.planet { width: 220px; aspect-ratio: 1; border-radius: 50%; background: #D891D9;
+  box-shadow: 0 0 0 32px #497CBF22, 0 0 90px #D891D988; display: grid; place-items: center; }
+h1 { font-size: 36px; transform: rotate(-4deg); }</style></head>
+  <body>
+    <style>
+      :root {
+        --black: #35303B;
+        --dark-gray: #4F4B55;
+        --white: #ECE6E4;
+        --blue: #3E94B3;
+        --yellow: #D7BA59;
+      }
+      html {
+        background-color: var(--black); margin: 0; padding: 0;
+      }
+      img { width: 100%; height: auto; }
+      a { color: var(--blue);}
+      h1 { font-size: 3rem; text-align: center; color: var(--yellow); padding-top: 1rem;}
+      #lsit {
+        display: flex; height: 5rem; gap: 1rem;
+        list-style: none; padding: 0; margin: 0;
+        >* { 
+          padding: 0; margin: 0;
+          background-color: var(--dark-gray);
+          padding: 1rem; height: 5rem; box-sizing: border-box;
+          img { width: 1rem; display}
+        }
+      }
+    </style>
+    <header>
+      <h1>nick's website!!</h1>
+      <nav>
+        <a href="https://github.com/autowattage">github</a>
+        <a href="https://github.com/autowattage">neocities</a>
+        <a href="https://github.com/autowattage">twitter</a>
+        <a href="https://github.com/autowattage">slack</a>
+        <a href="https://github.com/autowattage">tumblr</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <p>my name is nick!</p>
+        <p>things i like doing</p>
+        <ul id="lsit">
+          <li><img src="https://pendant.hackclub.com/public/img/bitlace.png">drawing</li>
+          <li><img src="https://pendant.hackclub.com/public/img/ultraterm.png">coding</li>
+          <li><img src="https://pendant.hackclub.com/public/img/readgood.JPG">sleeping</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>website made with love by <a href="/">nick</a>
+      <p><a href="">Hack Club</a> -- <a href="">Privacy policy</a>
+    </footer>
+  <script>document.querySelector('.planet')?.addEventListener('click', () => {
+  document.body.classList.toggle('clicked');
+});</script></body>
+</html>
